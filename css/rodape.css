@@ -1,0 +1,64 @@
+#contatos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #5a5a5a;
+    padding: 30px 0;
+    color: white;
+}
+
+
+#logo {
+    width: 200px;
+    height: 200px;
+
+}
+
+#icon {
+    width: 50px;
+    height: 50px;
+}
+
+#email {
+    width: 200px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+#Entrar {
+    width: 200px;
+    height: 30px;
+    background-color: white;
+    border: 1px solid #000;
+    color: #000;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#Entrar:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+#contato {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+}
+
+.contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.contact-info div {
+    text-align: center;
+    margin-bottom: 20px;
+}

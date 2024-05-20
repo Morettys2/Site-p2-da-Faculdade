@@ -1,0 +1,94 @@
+nav {
+    background-color: #5a5a5a;
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+#logo img {
+    max-width: 100%;
+    height: auto;
+}
+
+#nomes {
+    text-align: center;
+    flex-grow: 1;
+}
+
+#empresa-nome {
+    font-size: 30px;
+    color: white;
+    margin-bottom: 5px;
+}
+
+#empre-nome2 {
+    font-size: 18px;
+    color: #ccc;
+}
+
+#menu {
+    position: relative;
+}
+
+#menu .toggle-menu {
+    display: none;
+    cursor: pointer;
+}
+
+#menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+#menu ul li {
+    margin-right: 20px;
+}
+
+#menu ul li:last-child {
+    margin-right: 0;
+}
+
+#menu ul li a {
+    display: block;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+#menu ul li a:hover {
+    background-color: #353535;
+}
+
+@media (max-width: 768px) {
+    #menu ul {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #5a5a5a;
+        flex-direction: column;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    #menu ul.active {
+        display: flex;
+    }
+
+    #menu .toggle-menu {
+        display: block;
+        color: white;
+        font-size: 18px;
+        padding: 10px 20px;
+    }
+}
