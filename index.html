@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="css/cabecalho.css">
     <link rel="stylesheet" href="css/rodape.css">
     <link rel="stylesheet" href="css/cards.css">
-    <link rel="stylesheet" href="css/slide.css">
+    <link rel="stylesheet" href="css/foto.css">
+    <link rel="stylesheet" href="css/reset.css">
 
     <link rel="icon" href="imagens/logo-removebg-preview.png" type="image/x-icon">
 </head>
@@ -37,40 +38,22 @@
         </div>
     </nav>
 
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var toggleMenu = document.querySelector('.toggle-menu');
+            var menu = document.querySelector('#menu ul');
+
+            toggleMenu.addEventListener('click', function () {
+                menu.classList.toggle('active');
+            });
+        });
+    </script>
 
 
 
-    <div class="conteiner">
-        <div class="slides">
-            <input type="radio" name="slide" id="slide1" checked>
-            <input type="radio" name="slide" id="slide2">
-            <input type="radio" name="slide" id="slide3">
-            <input type="radio" name="slide" id="slide4">
-            <input type="radio" name="slide" id="slide5">
-
-            <div class="slide s1">
-                <img src="imagens/1.jpg" alt="Paisagem medieval">
-            </div>
-            <div class="slide">
-                <img src="imagens/2.jpg" alt="floresta roxa">
-            </div>
-            <div class="slide">
-                <img src="imagens/3.jpg" alt="cidade tecnologica">
-            </div>
-            <div class="slide">
-                <img src="imagens/4.jpg" alt="paisagem montanhesa">
-            </div>
-            <div class="slide">
-                <img src="imagens/5.jpg" alt="floresta escura com uma raposa">
-            </div>
-        </div>
-
-        <div class="nav">
-            <label class="dot" for="slide1"></label>
-            <label class="dot" for="slide2"></label>
-            <label class="dot" for="slide3"></label>
-            <label class="dot" for="slide4"></label>
-            <label class="dot" for="slide5"></label>
+    <div class="container-ajuste">
+        <div class="container">
+            <img src="imagens/1.jpg" alt="Paisagem medieval">
         </div>
     </div>
 
@@ -100,74 +83,74 @@
                     emitidos pelas instituições, seguindo critérios acadêmicos da Educação Superior.</p>
             </div>
         </div>
-        </div>
+    </div>
 
 
 
 
-        <div class="containerFed">
-            <div class="card">
-                <img src="imagens/1.jpg" alt="Imagem 1">
-                <div class="card-content">
-                    <h2>Ramom</h2>
-                    <p>Oferecemos cursos online via videoconferência ao vivo, com a presença do professor, em horários
-                        previamente confirmados. As aulas acontecem de duas a quatro vezes por semana, dependendo da
-                        turma, e têm uma carga horária que varia de 10 a 16 horas/aula.</p>
-                </div>
-            </div>
-            <div class="card">
-                <img src="imagens/2.jpg" alt="Imagem 2">
-                <div class="card-content">
-                    <h2>João</h2>
-                    <p>Nossa equipe busca promover uma significativa melhoria na sua qualidade de vida, abrangendo
-                        saúde, condicionamento físico e bem-estar geral. Comprometemo-nos em guiá-lo de forma segura e
-                        eficaz rumo aos seus objetivos.</p>
-                </div>
-            </div>
-            <div class="card">
-                <img src="imagens/3.jpg" alt="Imagem 3">
-                <div class="card-content">
-                    <h2>Gustavo</h2>
-                    <p>Todos nossos cursos on-line possuem certificado de conclusão igualmente válidos aos certificados
-                        dos cursos presenciais. A carga horária de cada curso pode variar de 10 a 16 horas.</p>
-                </div>
+    <div class="containerFed">
+        <div class="card">
+            <img src="imagens/1.jpg" alt="Imagem 1">
+            <div class="card-content">
+                <h2>Ramom</h2>
+                <p>Oferecemos cursos online via videoconferência ao vivo, com a presença do professor, em horários
+                    previamente confirmados. As aulas acontecem de duas a quatro vezes por semana, dependendo da
+                    turma, e têm uma carga horária que varia de 10 a 16 horas/aula.</p>
             </div>
         </div>
-
-        <footer>
-            <div id="contatos">
-                <div id="logo">
-                    <h2>Siga-nos</h2>
-                    <a href="#"><img src="imagens/whatsapp.png" alt="icon" id="icon"></a>
-                    <a href="#"><img src="imagens/facebook.png" alt="" id="icon"></a>
-                    <a href="#"> <img src="imagens/instagram.png" alt="" id="icon"></a>
-                </div>
-
-                <div id="telefone 1">
-                    <h4>Alfenas/MG</h4>
-                    <p>Julio Cesar (35) 98851-9388</p> <br>
-                    <h4>Tambaú/SP</h4>
-                    <p>Talles Gabriel (19) 98947-3006</p>
-                </div>
-               
-                <div id="telefone2">
-                    <h4>Itajuba</h4>
-                    <p>Luciane Vieira (93) 99169-9066</p> <br>
-                    <h4>Minas Gerais</h4>
-                    <p>Juliana (35) 99804-5209</p>
-                </div>
-
-                <form action="login.php" method="post" autocomplete="on">
-                    <div id="contato">
-                        <label for="email"><strong>Para mais informações, envie-nos um e-mail. Estamos à disposição para
-                                ajudar!</strong></label> <br>
-                        <input type="email" name="iemail" id="email" placeholder="Seu e-mail" autocomplete="email"
-                            required maxlength="30"> <br>
-                        <input type="submit" value="Entrar" id="Entrar">
-                    </div>
-                </form>
+        <div class="card">
+            <img src="imagens/2.jpg" alt="Imagem 2">
+            <div class="card-content">
+                <h2>João</h2>
+                <p>Nossa equipe busca promover uma significativa melhoria na sua qualidade de vida, abrangendo
+                    saúde, condicionamento físico e bem-estar geral. Comprometemo-nos em guiá-lo de forma segura e
+                    eficaz rumo aos seus objetivos.</p>
             </div>
-        </footer>
+        </div>
+        <div class="card">
+            <img src="imagens/3.jpg" alt="Imagem 3">
+            <div class="card-content">
+                <h2>Gustavo</h2>
+                <p>Todos nossos cursos on-line possuem certificado de conclusão igualmente válidos aos certificados
+                    dos cursos presenciais. A carga horária de cada curso pode variar de 10 a 16 horas.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div id="contatos">
+            <div id="logo">
+                <h2>Siga-nos</h2>
+                <a href="#"><img src="imagens/whatsapp.png" alt="icon" id="icon"></a>
+                <a href="#"><img src="imagens/facebook.png" alt="" id="icon"></a>
+                <a href="#"> <img src="imagens/instagram.png" alt="" id="icon"></a>
+            </div>
+
+            <div id="telefone 1">
+                <h4>Alfenas/MG</h4>
+                <p>Julio Cesar (35) 98851-9388</p> <br>
+                <h4>Tambaú/SP</h4>
+                <p>Talles Gabriel (19) 98947-3006</p>
+            </div>
+
+            <div id="telefone2">
+                <h4>Itajuba</h4>
+                <p>Luciane Vieira (93) 99169-9066</p> <br>
+                <h4>Minas Gerais</h4>
+                <p>Juliana (35) 99804-5209</p>
+            </div>
+
+            <form action="login.php" method="post" autocomplete="on">
+                <div id="contato">
+                    <label for="email"><strong>Para mais informações, envie-nos um e-mail. Estamos à disposição para
+                            ajudar!</strong></label> <br>
+                    <input type="email" name="iemail" id="email" placeholder="Seu e-mail" autocomplete="email" required
+                        maxlength="30"> <br>
+                    <input type="submit" value="Enviar" id="Enviar">
+                </div>
+            </form>
+        </div>
+    </footer>
 </body>
 
 </html>

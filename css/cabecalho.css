@@ -1,3 +1,12 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
 nav {
     background-color: #5a5a5a;
 }
@@ -69,7 +78,7 @@ nav {
     background-color: #353535;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 480px) {
     #menu ul {
         display: none;
         position: absolute;
@@ -90,5 +99,95 @@ nav {
         color: white;
         font-size: 18px;
         padding: 10px 20px;
+    }
+
+    #nomes {
+        display: none;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    #menu ul {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #5a5a5a;
+        flex-direction: column;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    #menu ul.active {
+        display: flex;
+    }
+
+    #menu .toggle-menu {
+        display: block;
+        color: white;
+        font-size: 18px;
+        padding: 10px 20px;
+    }
+
+    #header {
+        flex-direction: column;
+    }
+
+    #nomes {
+        margin: 10px 0;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    #menu ul {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #5a5a5a;
+        flex-direction: column;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    #menu ul.active {
+        display: flex;
+    }
+
+    #menu .toggle-menu {
+        display: block;
+        color: white;
+        font-size: 18px;
+        padding: 10px 20px;
+    }
+
+    #header {
+        flex-direction: column;
+    }
+
+    #nomes {
+        margin: 10px 0;
+    }
+}
+
+@media (min-width: 1025px) {
+    #menu ul {
+        display: flex;
+        position: static;
+        flex-direction: row;
+        background-color: transparent;
+        box-shadow: none;
+    }
+
+    #menu .toggle-menu {
+        display: none;
+    }
+
+    #header {
+        flex-direction: row;
+    }
+
+    #nomes {
+        display: block;
     }
 }
